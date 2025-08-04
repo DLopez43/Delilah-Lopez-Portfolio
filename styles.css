@@ -1,0 +1,86 @@
+/* nav  */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    
+}
+
+#nav-links{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+#nav-links a {
+    text-decoration:none;
+}
+
+/* hero section */
+#hero-section{
+    display:flex;
+}
+#profile-picture{
+    max-width: 200px;
+    clip-path: polygon(100% 50%,87.67% 60.09%,93.3% 75%,77.58% 77.58%,75% 93.3%,60.09% 87.67%,50% 100%,39.91% 87.67%,25% 93.3%,22.42% 77.58%,6.7% 75%,12.33% 60.09%,0% 50%,12.33% 39.91%,6.7% 25%,22.42% 22.42%,25% 6.7%,39.91% 12.33%,50% 0%,60.09% 12.33%,75% 6.7%,77.58% 22.42%,93.3% 25%,87.67% 39.91%);  
+}
+/* about */
+#about {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.cards{
+    border:2px solid black;
+    border-radius: 10px;
+    
+    margin:2px;
+}
+
+/* projects */
+/* contact */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+#contact-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon-img {
+    height: 20px;
+    width: 20px;
+}
+
+#icon-creators {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 0.8 em;
+}
+
+#icon-title{
+    text-align: center;
+}
+#icon-creators p {
+    font-size:  .8em;
+
+}
