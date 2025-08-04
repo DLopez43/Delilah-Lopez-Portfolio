@@ -1,2 +1,2 @@
 # Delilah-Lopez-Portfolio
-My proffesional portfolio that will grow with me.
+My professional portfolio that will grow with me.
