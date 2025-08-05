@@ -44,8 +44,13 @@ nav{
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 300px; 
     width: 100%; 
+    padding:100px;
+    text-wrap: wrap;
 }
 
 #profile-picture{
@@ -53,26 +58,83 @@ nav{
     max-height: 250px;
     clip-path: polygon(100% 50%,87.67% 60.09%,93.3% 75%,77.58% 77.58%,75% 93.3%,60.09% 87.67%,50% 100%,39.91% 87.67%,25% 93.3%,22.42% 77.58%,6.7% 75%,12.33% 60.09%,0% 50%,12.33% 39.91%,6.7% 25%,22.42% 22.42%,25% 6.7%,39.91% 12.33%,50% 0%,60.09% 12.33%,75% 6.7%,77.58% 22.42%,93.3% 25%,87.67% 39.91%);  
     /* filter: drop-shadow(0 0 0.75rem rgba(0, 255, 255, 0.7)) ; creates a Cyan glow only if img isn't clipped.*/
+    padding: 0;
+    margin:0;
     
 }
 /* about & projects */
 #about,  #projects{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .cards{
     border:2px solid black;
     border-radius: 10px;
-    
     margin:2px;
 }
 
+/* media queries */
 
-/* contact */
+ @media (min-width: 768px) and (max-width: 1024px) {
+      /* Styles for tablets in portrait mode */
+      #about,  #projects{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+ #profile-picture{
+    max-width: 150px;
+    max-height: 150px;
+    clip-path: polygon(100% 50%,87.67% 60.09%,93.3% 75%,77.58% 77.58%,75% 93.3%,60.09% 87.67%,50% 100%,39.91% 87.67%,25% 93.3%,22.42% 77.58%,6.7% 75%,12.33% 60.09%,0% 50%,12.33% 39.91%,6.7% 25%,22.42% 22.42%,25% 6.7%,39.91% 12.33%,50% 0%,60.09% 12.33%,75% 6.7%,77.58% 22.42%,93.3% 25%,87.67% 39.91%);  
+    
+}
 
+#hero-section{
+    width:auto;
+    margin:auto;
+    padding: 50px;
+}
+h1, #hero-section p{
+    font-size:small;
+}
+    }
 
+@media (min-width: 481px) and (max-width: 767px) {
+      /* Styles for large mobile devices and low-res tablets */
+      #about,  #projects{
+    grid-template-columns: 1fr 1fr;
+      }
+    #profile-picture{
+    max-width: 100px;
+    max-height: 100px;
+    clip-path: polygon(100% 50%,87.67% 60.09%,93.3% 75%,77.58% 77.58%,75% 93.3%,60.09% 87.67%,50% 100%,39.91% 87.67%,25% 93.3%,22.42% 77.58%,6.7% 75%,12.33% 60.09%,0% 50%,12.33% 39.91%,6.7% 25%,22.42% 22.42%,25% 6.7%,39.91% 12.33%,50% 0%,60.09% 12.33%,75% 6.7%,77.58% 22.42%,93.3% 25%,87.67% 39.91%);  
+    
+}
+h1, #hero-section p {
+    font-size: smaller;
+    
 
+}
+ 
+}
+    
+
+@media (max-width: 480px) {
+      /* Styles for small mobile devices */
+      #about,  #projects{
+    grid-template-columns: 1fr;
+}
+#profile-picture{
+   visibility: hidden;
+}
+h1, #hero-section p{
+    font-size:x-small
+
+}
+#hero-section{
+    padding: 10px;
+}
+
+    }
 
 
 
