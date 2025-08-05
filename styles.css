@@ -1,3 +1,17 @@
+/* effects  */
+a:hover, #nav-links li:hover {
+   transform: scale(2);
+  /* box-shadow: 0 0 30px rgba(0,255,255,0.8); */
+}
+
+
+/* body */
+body {
+    background-image: url("./assets/Gradientnight.jpg");
+    color:aliceblue;
+    font-family:cursive;
+}
+
 /* nav  */
 nav{
     display: flex;
@@ -12,10 +26,12 @@ nav{
     display: flex;
     gap: 20px;
     list-style-type: none;
+    
 }
 
 #nav-links a {
     text-decoration:none;
+    color:aliceblue;
 }
 
 /* hero section */
@@ -26,8 +42,8 @@ nav{
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center; 
-    height: 300px; /* Set a height for the div to see the background */
-    width: 100%; /* Set a width, or it will default to content width */
+    height: 300px; 
+    width: 100%; 
 }
 
 #profile-picture{
