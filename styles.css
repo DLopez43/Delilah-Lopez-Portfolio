@@ -1,4 +1,3 @@
-
 /* effects  */
 a:hover, #nav-links li:hover {
    transform: scale(2);
@@ -14,7 +13,7 @@ body {
     font-family:cursive;
 }
 
-h2 {
+h2 , h4 {
     text-align: center;
 }
 /* nav  */
@@ -54,7 +53,9 @@ nav{
     flex-direction: column;
     height: 300px; 
     width: 100%; 
-    padding:100px 20px;
+    padding:0;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-wrap: wrap;
     box-shadow: 0 0 10px 15px rgba(0, 0, 0, 0.7)
 }
@@ -99,7 +100,9 @@ nav{
 #hero-section{
     width:auto;
     margin:auto;
-    padding: 50px;
+    padding:0;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 h1, #hero-section p{
     font-size:small;
@@ -139,14 +142,16 @@ h1, #hero-section p {
     grid-template-columns: 1fr;
 }
 #profile-picture{
-   visibility: hidden;
+   display: none;
 }
 h1, #hero-section p{
     font-size:x-small
 
 }
 #hero-section{
-    padding: 10px 0px;
+    padding:0;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
     }
