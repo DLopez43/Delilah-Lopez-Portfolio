@@ -55,8 +55,8 @@ nav{
     /* filter: drop-shadow(0 0 0.75rem rgba(0, 255, 255, 0.7)) ; creates a Cyan glow only if img isn't clipped.*/
     
 }
-/* about */
-#about {
+/* about & projects */
+#about,  #projects{
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
@@ -68,7 +68,7 @@ nav{
     margin:2px;
 }
 
-/* projects */
+
 /* contact */
 
 
