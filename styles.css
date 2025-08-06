@@ -1,23 +1,30 @@
 /* effects  */
-a:hover, #nav-links li:hover {
+.icon-img:hover {
    transform: scale(2);
    border-radius: 7%;
-  box-shadow: 0 0 30px rgba(0,255,255,0.8);
+  box-shadow: 0px 0px 20px rgba(0,255,255,0.8);
+  
+}
+
+#nav-links li:hover{
+text-shadow: 1px 1px 1px rgba(0,255,255,0.8);
+transform: scale(2);
 }
 
 .cards:hover{
-    box-shadow: 0 0 10px 15px rgb(80, 2, 61)
+    box-shadow: 0 0 10px 15px rgb(80, 2, 61);
 }
 
 /* body */
 body {
     background-image: url("./assets/Gradientnight.jpg");
     color:aliceblue;
-    font-family:cursive;
+    font-family: cursive;
 }
 
 h2 , h4 , details {
     text-align: center;
+    
 }
 
 
