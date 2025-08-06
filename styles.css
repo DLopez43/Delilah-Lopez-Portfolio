@@ -127,6 +127,10 @@ main {
     box-shadow: 0 0 10px 15px rgba(0, 0, 0, 0.2)
 }
 
+.cards img{
+    border-radius: 10px;
+    
+}
 
 /* media queries */
 
