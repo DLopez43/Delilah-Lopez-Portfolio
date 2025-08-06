@@ -209,6 +209,14 @@ h1, #hero-section p{
    gap: 5px; 
     
 }
+#icon-creators {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: .5em;
+    padding: .8em;;
+}
 
     }
 
@@ -229,8 +237,9 @@ h1, #hero-section p{
 #icon-creators {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: row;
     flex-wrap: wrap;
-    font-size: 0.8 em;
+    font-size: 1em;
 }
 
 #icon-title{
