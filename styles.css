@@ -2,11 +2,11 @@
 .icon-img:hover {
    transform: scale(2);
    border: .2px solid rgba(0,255,255,0.8);
-   border-radius: 7%;
+   border-radius: 8%;
    box-shadow: 0px 0px 20px rgba(0,255,255,0.8);
 }
 
-#nav-links a:hover{
+#nav-links a:hover, #resume:hover {
 text-shadow: 1px 1px 1px rgba(0,255,255,0.8); /*adds shadow to words*/
 transform: scale(1.5);/*enlarges nav links on hover*/
 }
@@ -84,7 +84,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 300px; 
+    height: 350px; 
     width: 100%; 
     padding:0;
     padding-top: 50px;
@@ -99,8 +99,17 @@ main {
     clip-path: polygon(100% 50%,87.67% 60.09%,93.3% 75%,77.58% 77.58%,75% 93.3%,60.09% 87.67%,50% 100%,39.91% 87.67%,25% 93.3%,22.42% 77.58%,6.7% 75%,12.33% 60.09%,0% 50%,12.33% 39.91%,6.7% 25%,22.42% 22.42%,25% 6.7%,39.91% 12.33%,50% 0%,60.09% 12.33%,75% 6.7%,77.58% 22.42%,93.3% 25%,87.67% 39.91%);  
     padding: 0;
     margin:0;
-
 }
+ #resume{
+    border: 1px solid white;
+    border-radius: 5%;
+    background-color: transparent;
+    padding: 2% 20%;
+    margin-left: 7%;
+    text-decoration: none;
+    color: white;
+    box-shadow:0px 0px 20px rgba(0,255,255,0.8);
+ }
 /*                               about & projects                                */
 #about,  #projects{
     display: grid;
