@@ -1,15 +1,14 @@
-/* effects  */
+/*                                            effects                                    */
 .icon-img:hover {
    transform: scale(2);
    border: .2px solid rgba(0,255,255,0.8);
    border-radius: 7%;
-  box-shadow: 0px 0px 20px rgba(0,255,255,0.8);
-  
+   box-shadow: 0px 0px 20px rgba(0,255,255,0.8);
 }
 
 #nav-links a:hover{
-text-shadow: 1px 1px 1px rgba(0,255,255,0.8);
-transform: scale(1.5);
+text-shadow: 1px 1px 1px rgba(0,255,255,0.8); /*adds shadow to words*/
+transform: scale(1.5);/*enlarges nav links on hover*/
 }
 
 .cards:hover{
@@ -19,7 +18,7 @@ transform: scale(1.5);
 }
 
 
-/* body */
+ /*                                         body                                            */
 body {
     background-image: url("./assets/Gradientnight.jpg");
     color:aliceblue;
@@ -39,7 +38,7 @@ main {
     margin-top : 20px;
 }
 
-/* nav  */
+/*                                       nav                                     */
 #nav-bar{
     display: flex;
     align-items: center;
@@ -57,11 +56,6 @@ main {
     background-repeat: no-repeat; 
     background-position: center; 
     border: 2px solid black;
-    /* overflow: hidden; */
-    /* display: grid;
-    grid-template-columns: 100%;
-    place-content: center; */
-    
 }
 
 #nav-links{
@@ -72,9 +66,6 @@ main {
     padding: 10px;
     justify-content: space-between;
     text-align: center;
-    /* display: grid;
-    grid-template-columns: 25% 25% 25% 25%; */
-    
 }
 
 #nav-links a {
@@ -82,7 +73,7 @@ main {
     color:aliceblue;
 }
 
-/* hero section */
+/*                                       hero section                                   */
 #hero-section{
     color: white;
     display:flex;
@@ -101,21 +92,16 @@ main {
     text-wrap: wrap;
     box-shadow: 0 0 10px 15px rgba(0, 0, 0, 0.7);
 }
-/* #img-container{ */
-     /* filter: drop-shadow(1000px 1000px 1000px rgba(0, 255, 255, 0.7)) ;  */
-      /* filter: drop-shadow(0px 0px 0px white);
-}  */
 
 #profile-picture{
     max-width: 250px;
     max-height: 250px;
     clip-path: polygon(100% 50%,87.67% 60.09%,93.3% 75%,77.58% 77.58%,75% 93.3%,60.09% 87.67%,50% 100%,39.91% 87.67%,25% 93.3%,22.42% 77.58%,6.7% 75%,12.33% 60.09%,0% 50%,12.33% 39.91%,6.7% 25%,22.42% 22.42%,25% 6.7%,39.91% 12.33%,50% 0%,60.09% 12.33%,75% 6.7%,77.58% 22.42%,93.3% 25%,87.67% 39.91%);  
-    /* filter: drop-shadow(0 0 0.75rem rgba(0, 255, 255, 0.7)) ; */
     padding: 0;
     margin:0;
 
 }
-/* about & projects */
+/*                               about & projects                                */
 #about,  #projects{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -137,7 +123,36 @@ main {
     
 }
 
-/* media queries */
+/* footer */
+#contact-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon-img {
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+#icon-creators {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1em;
+}
+
+#icon-title{
+    text-align: center;
+}
+#icon-creators p {
+    font-size:  .8em;
+
+}
+
+/*                                           media queries                               */
 
  @media (min-width: 768px) and (max-width: 1024px) {
       /* Styles for tablets in portrait mode */
@@ -224,33 +239,3 @@ h1, #hero-section p{
 }
 
     }
-
-
-/* footer */
-#contact-links{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.icon-img {
-    height: 30px;
-    width: 30px;
-    padding: 0;
-    margin: 0;
-}
-
-#icon-creators {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 1em;
-}
-
-#icon-title{
-    text-align: center;
-}
-#icon-creators p {
-    font-size:  .8em;
-
-}
